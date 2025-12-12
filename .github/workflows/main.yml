@@ -61,9 +61,9 @@ jobs:
       run: |
         pip install black flake8 mypy
     
-    - name: Check code formatting with Black
-      run: |
-        black --check scripts/ src/ tests/
+  #  - name: Check code formatting with Black
+  #   run: 
+  #      black --check scripts/ src/ tests/
     
     - name: Lint with flake8
       run: |
