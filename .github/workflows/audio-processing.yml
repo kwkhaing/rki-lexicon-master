@@ -1,0 +1,55 @@
+name: Audio Processing
+
+on:
+  workflow_dispatch:
+    inputs:
+      audio_dir:
+        description: 'Directory containing audio files'
+        required: true
+        default: 'data/raw/audio/'
+      process_type:
+        description: 'Type of processing'
+        required: true
+        default: 'normalize'
+        type: choice
+        options:
+        - normalize
+        - segment
+        - analyze
+
+jobs:
+  process-audio:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install audio dependencies
+      run: |
+        pip install -r requirements_audio.txt
+    
+    - name: Check for audio files
+      run: |
+        if [ ! -d "${{ github.event.inputs.audio_dir }}" ]; then
+          echo "Audio directory not found"
+          exit 1
+        fi
+        echo "Found audio directory: ${{ github.event.inputs.audio_dir }}"
+    
+    - name: Run audio processing
+      run: |
+        python scripts/audio_processing.py \
+          --input "${{ github.event.inputs.audio_dir }}" \
+          --output "data/processed/audio/" \
+          --type "${{ github.event.inputs.process_type }}"
+    
+    - name: Upload processed files
+      uses: actions/upload-artifact@v3
+      with:
+        name: processed-audio
+        path: data/processed/audio/
