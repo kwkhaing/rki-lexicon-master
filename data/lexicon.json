@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "language": "Rakhine",
+    "iso_code": "rki",
+    "script": "Myanmar",
+    "version": "1.0.0",
+    "last_updated": "2024-01-01",
+    "description": "Comprehensive digital lexicon of the Rakhine language",
+    "license": "CC BY-SA 4.0",
+    "authors": [],
+    "sources": []
+  },
+  "lexicon": [
+    {
+      "id": "rki_0001",
+      "rakhine": "လမ်",
+      "romanization": "lam",
+      "ipa": "/lăm/",
+      "pos": "noun",
+      "gloss_en": "road, path",
+      "gloss_my": "လမ်း",
+      "definition_en": "a way or track laid down for walking or traveling",
+      "definition_my": "သွားလာရန်လမ်း",
+      "example": "လမ်ဒေါ့ရေ။",
+      "example_translation": "Let's go on the road.",
+      "dialect": "Sittwe",
+      "notes": "Common in daily conversation",
+      "source": "Rakhine Dictionary 1998"
+    }
+  ]
+}
