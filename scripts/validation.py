@@ -111,7 +111,7 @@ class RakhineLexiconValidator:
                 return True
         return False
     
-    def validate_lexicon_file(self, filepath: str) -> Dict[str, Any]:
+    def validate_lexicon_file(self, filepath: str) -> Dict[str, any]:
         """Validate entire lexicon file."""
         with open(filepath, 'r', encoding='utf-8') as f:
             data = json.load(f)
