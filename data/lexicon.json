@@ -26,6 +26,32 @@
       "dialect": "Sittwe",
       "notes": "Common in daily conversation",
       "source": "Rakhine Dictionary 1998"
+    },
+    {
+      "id": "rki_0002",
+      "rakhine": "ရီ",
+      "romanization": "re",
+      "ipa": "/rè/",
+      "pos": "noun",
+      "gloss_en": "water",
+      "gloss_my": "ရေ",
+      "definition_en": "clear liquid essential for life",
+      "example": "ရီ သောက်ကတ်မယ်။",
+      "example_translation": "Let's drink water.",
+      "dialect": "Mrauk-U"
+    },
+    {
+      "id": "rki_0003",
+      "rakhine": "ဆာ",
+      "romanization": "hsa",
+      "ipa": "/sʰa/",
+      "pos": "verb",
+      "gloss_en": "hungry",
+      "gloss_my": "ဆာ",
+      "definition_en": "to put food in the mouth and swallow it",
+      "example": "ငါ ဝမ်းဆာရေ။",
+      "example_translation": "I am hungry.",
+      "dialect": "Sittwe"
     }
   ]
 }
