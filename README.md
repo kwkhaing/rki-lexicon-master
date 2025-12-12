@@ -16,7 +16,7 @@ A comprehensive digital lexicon for the Rakhine language (Arakanese), an endange
 ## Quick Start
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/rki-lexicon.git
+git clone https://github.com/kwkhaing/rki-lexicon-master.git
 cd rki-lexicon
 ./init_project.sh
 
