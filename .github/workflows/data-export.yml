@@ -1,0 +1,56 @@
+name: Data Export
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly on Sunday at midnight
+  workflow_dispatch:
+
+jobs:
+  export-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        pip install pandas openpyxl
+    
+    - name: Export all formats
+      run: |
+        python scripts/export_formats.py
+    
+    - name: Create data release
+      run: |
+        # Create timestamp
+        TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+        
+        # Create archive of exports
+        tar -czf "rki-lexicon-data-$TIMESTAMP.tar.gz" -C data/exports .
+        
+        # Create JSON stats
+        python -c "
+        import json, os
+        stats = {
+            'timestamp': '$TIMESTAMP',
+            'files': os.listdir('data/exports'),
+            'lexicon_count': len(json.load(open('data/lexicon.json'))['lexicon'])
+        }
+        with open('data/stats.json', 'w') as f:
+            json.dump(stats, f, indent=2)
+        "
+    
+    - name: Upload data release
+      uses: actions/upload-artifact@v3
+      with:
+        name: data-export-${{ github.run_id }}
+        path: |
+          data/exports/
+          data/stats.json
+          rki-lexicon-data-*.tar.gz
