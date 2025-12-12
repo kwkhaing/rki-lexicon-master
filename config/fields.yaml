@@ -1,0 +1,43 @@
+required_fields:
+  - id
+  - rakhine
+  - romanization
+  - pos
+  - gloss_en
+
+optional_fields:
+  - ipa
+  - gloss_my
+  - definition_en
+  - definition_my
+  - example
+  - example_translation
+  - synonyms
+  - antonyms
+  - dialect
+  - etymology
+  - notes
+  - source
+  - audio
+
+pos_tags:
+  - noun
+  - verb
+  - adjective
+  - adverb
+  - pronoun
+  - particle
+  - classifier
+  - interjection
+  - conjunction
+  - numeral
+  - preposition
+  - postposition
+  - auxiliary
+
+audio_quality_requirements:
+  min_duration: 0.5
+  max_duration: 3.0
+  min_sample_rate: 22050
+  allowed_formats: [wav, mp3, flac]
+  max_background_noise: -40
