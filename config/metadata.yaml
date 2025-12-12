@@ -1,0 +1,182 @@
+# Rakhine Lexicon Project Metadata
+# =================================
+
+project:
+  # Basic project information
+  name: "Rakhine Language Lexicon"
+  short_name: "rki-lexicon"
+  version: "1.0.0"
+  description: "A comprehensive digital lexicon for the Rakhine language (ISO 639-3: rki)"
+  repository: "https://github.com/YOUR_USERNAME/rki-lexicon"
+  homepage: "https://YOUR_USERNAME.github.io/rki-lexicon"
+  
+  # Project status
+  status: "active"
+  stage: "development"  # development, alpha, beta, stable
+  release_date: "2024-01-01"
+  
+  # Contact information
+  maintainers:
+    - name: "Your Name"
+      email: "your.email@example.com"
+      affiliation: "Your Institution"
+      orcid: "0000-0000-0000-0000"  # Optional ORCID ID
+  
+  # Technical metadata
+  encoding: "UTF-8"
+  format_version: "1.0"
+  schema_version: "1.0"
+
+language:
+  # Language identification
+  name: "Rakhine"
+  native_name: "ရခိုင်ဘာသာ"
+  alt_names: ["Arakanese", "Rakhaing"]
+  iso_639_3: "rki"
+  glottocode: "rakh1245"
+  
+  # Language classification
+  family: "Sino-Tibetan"
+  subfamily: "Tibeto-Burman"
+  branch: "Lolo-Burmese"
+  subgroup: "Burmish"
+  
+  # Geographic information
+  country: "Myanmar"
+  region: "Rakhine State"
+  coordinates: [20.0, 93.0]  # Approximate center of Rakhine State
+  endangered_status: "Vulnerable"  # UNESCO Atlas status
+  speakers: "~1,000,000"
+  
+  # Script information
+  script: "Myanmar"
+  script_type: "abugida"
+  unicode_range: "U+1000–U+109F"  # Myanmar block
+  
+  # Linguistic features
+  word_order: "SOV"
+  morphological_type: "analytic"
+  tones: true
+  tone_count: 3  # High, Low, Creaky
+  register: true
+
+data:
+  # Dataset characteristics
+  total_entries: 0  # Will be updated automatically
+  with_audio: 0
+  with_examples: 0
+  with_ipa: 0
+  dialects_covered: ["Sittwe", "Mrauk-U"]
+  
+  # Data quality
+  validation_level: "basic"  # basic, checked, validated, expert-verified
+  completeness: 0.0  # Percentage
+  
+  # Sources
+  sources:
+    - name: "Rakhine Dictionary"
+      year: 1998
+      publisher: "Rakhine Language Commission"
+      type: "print"
+    
+    - name: "Fieldwork recordings"
+      year: "2023-2024"
+      collector: "Various"
+      type: "primary"
+  
+  # Data formats
+  available_formats:
+    - json
+    - tsv
+    - csv
+    - xml
+    - sql
+    - excel
+  
+  # Linked data
+  linked_datasets:
+    - name: "CLDF"
+      format: "cldf"
+      version: "1.0"
+    
+    - name: "Lexibank"
+      format: "cldf"
+      version: "2.0"
+
+license:
+  # Licensing information
+  name: "Creative Commons Attribution-ShareAlike 4.0 International"
+  abbreviation: "CC BY-SA 4.0"
+  url: "https://creativecommons.org/licenses/by-sa/4.0/"
+  
+  # Usage rights
+  commercial_use: true
+  modifications_allowed: true
+  share_alike: true
+  attribution_required: true
+  
+  # Citation
+  citation: |
+    @misc{rki_lexicon_2024,
+      title = {Rakhine Language Lexicon},
+      author = {Rakhine Language Community},
+      year = {2024},
+      publisher = {GitHub},
+      url = {https://github.com/YOUR_USERNAME/rki-lexicon}
+    }
+
+contributors:
+  # Contributor roles (based on CRediT taxonomy)
+  roles:
+    conceptualization: []
+    data_curation: []
+    formal_analysis: []
+    funding_acquisition: []
+    investigation: []
+    methodology: []
+    project_administration: []
+    resources: []
+    software: []
+    supervision: []
+    validation: []
+    visualization: []
+    writing_original_draft: []
+    writing_review_editing: []
+
+workflow:
+  # Data processing pipeline
+  steps:
+    - name: "Data ingestion"
+      script: "scripts/data_processing.py"
+      description: "Import and validate new entries"
+    
+    - name: "Audio processing"
+      script: "scripts/audio_processing.py"
+      description: "Process audio recordings"
+    
+    - name: "Validation"
+      script: "scripts/validation.py"
+      description: "Validate all data"
+    
+    - name: "Export"
+      script: "scripts/export_formats.py"
+      description: "Export to multiple formats"
+    
+    - name: "Analysis"
+      script: "scripts/analysis/frequency_analysis.py"
+      description: "Generate statistics and visualizations"
+
+updates:
+  # Update history
+  changelog:
+    - version: "1.0.0"
+      date: "2024-01-01"
+      changes:
+        - "Initial release"
+        - "Basic lexicon structure"
+        - "Validation scripts"
+  
+  # Automatic updates
+  last_updated: "2024-01-01"  # Will be updated automatically
+  update_frequency: "weekly"
+  next_scheduled_update: "2024-01-08"
