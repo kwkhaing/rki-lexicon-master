@@ -1,6 +1,6 @@
 # Rakhine Language Lexicon (ISO 639-3: rki)
 
-A comprehensive digital lexicon for the Rakhine language (Arakanese), an endangered Sino-Tibetan language spoken in Myanmar's Rakhine State.
+A comprehensive digital lexicon for the Rakhine language (Arakanese), an endangered Sino-Tibetan language spoken by approximately 3 to 5 million people, primarily in western Myanmar's Rakhine State, as well as in neighboring areas of Bangladesh and India.
 
 ## Features
 - Machine-readable lexicon with rich linguistic annotations
