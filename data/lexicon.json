@@ -13,15 +13,15 @@
   "lexicon": [
     {
       "id": "rki_0001",
-      "rakhine": "လမ်",
+      "rakhine": "လမ်း",
       "romanization": "lam",
       "ipa": "/lăm/",
       "pos": "noun",
       "gloss_en": "road, path",
       "gloss_my": "လမ်း",
       "definition_en": "a way or track laid down for walking or traveling",
-      "definition_my": "သွားလာရန်လမ်း",
-      "example": "လမ်ဒေါ့ရေ။",
+      "definition_my": "သွားလာရန် လမ်း",
+      "example": "လမ်းက လားကတ်မယ်။",
       "example_translation": "Let's go on the road.",
       "dialect": "Sittwe",
       "notes": "Common in daily conversation",
