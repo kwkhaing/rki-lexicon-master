@@ -1,0 +1,37 @@
+# Rakhine Myanmar Script Characters
+
+## Consonants (33)
+က ခ ဂ ဃ င
+စ ဆ ဇ ဈ ည
+ဋ ဌ ဍ ဎ ဏ
+တ ထ ဒ ဓ န
+ပ ဖ ဗ ဘ မ
+ယ ရ လ ဝ သ
+ဟ ဠ အ
+
+## Independent Vowels (8)
+အ ဣ ဤ ဥ ဦ ဧ ဩ ဪ
+
+## Dependent Vowels (Diacritics)
+ာ ါ ိ ီ ု ူ ေ ဲ ံ ့ း ျ ြ ွ ှ
+
+## Digits (0-9)
+၀ ၁ ၂ ၃ ၄ ၅ ၆ ၇ ၈ ၉
+
+## Punctuation
+။ ၊
+
+## Special Marks
+် (Asat/Virama)
+္ (Consonant stack marker)
+
+## Sample Words
+ရခိုင် (Rakhine)
+ဘာသာ (language)
+စကား (speech)
+လူ (person)
+အိမ် (house)
+ရေ (water)
+မီး (fire)
+မိန်း (earth)
+လေ (air)
